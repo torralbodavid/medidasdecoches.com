@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa7ae1cc-b430-4cfa-ab88-8f8c90179db3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/medidasdecoches.com/cat/torralbo/medidasdecoches/Cotxes$OrdenaPerMaleter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/medidasdecoches.com/cat/torralbo/medidasdecoches/Cotxes$OrdenaPerMida.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/medidasdecoches.com/cat/torralbo/medidasdecoches/Cotxes.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/medidasdecoches.com/cat/torralbo/medidasdecoches/Menu.class" afterPath="$PROJECT_DIR$/out/production/medidasdecoches.com/cat/torralbo/medidasdecoches/Menu.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cat/torralbo/medidasdecoches/Cotxes.java" afterPath="$PROJECT_DIR$/src/cat/torralbo/medidasdecoches/Cotxes.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +30,8 @@
       <file leaf-file-name="Cotxes.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cat/torralbo/medidasdecoches/Cotxes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="351" column="46" lean-forward="false" selection-start-line="351" selection-start-column="46" selection-end-line="351" selection-end-column="46" />
+            <state relative-caret-position="152">
+              <caret line="355" column="45" lean-forward="false" selection-start-line="355" selection-start-column="45" selection-end-line="355" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#334#342#0" expanded="true" />
@@ -611,7 +606,7 @@
       <workItem from="1495561388030" duration="535000" />
       <workItem from="1495631046673" duration="8690000" />
       <workItem from="1495664899071" duration="9104000" />
-      <workItem from="1495715910597" duration="9541000" />
+      <workItem from="1495715910597" duration="9692000" />
     </task>
     <task id="LOCAL-00001" summary="Minor bug fixes">
       <created>1495723874845</created>
@@ -620,11 +615,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495723874845</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Minor bug fixes">
+      <created>1495727529485</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1495727529485</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27870000" />
+    <option name="totallyTimeSpent" value="28021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="702" extended-state="6" />
@@ -779,8 +781,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cat/torralbo/medidasdecoches/Cotxes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="351" column="46" lean-forward="false" selection-start-line="351" selection-start-column="46" selection-end-line="351" selection-end-column="46" />
+        <state relative-caret-position="152">
+          <caret line="355" column="45" lean-forward="false" selection-start-line="355" selection-start-column="45" selection-end-line="355" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#334#342#0" expanded="true" />
