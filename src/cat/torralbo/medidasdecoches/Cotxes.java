@@ -16,10 +16,10 @@ public class Cotxes {
     public List<Cotxes> use = new ArrayList<Cotxes>();
     public File f = new File("src/cotxes.txt");
 
-    String marca, model, versio;
-    int any;
-    double llarg, ample, alt, maleter;
-    boolean seleccio;
+    private String marca, model, versio;
+    private int any;
+    private double llarg, ample, alt, maleter;
+    private boolean seleccio;
 
     public Cotxes() {
         this.marca = marca;
@@ -310,6 +310,27 @@ public class Cotxes {
         double mida = (llarg/1000)*(ample/1000)*(alt/1000);
 
         return Double.parseDouble(df.format(mida));
+
+    }
+
+    public void retornaMarques(){
+        String[] arrayMarques = new String[use.size()+1];
+        List llistaMarques = Arrays.asList(arrayMarques);
+
+        int i = 0;
+
+        for (Cotxes objecte : use) {
+            if(!llistaMarques.contains(objecte.getMarca())) {
+                arrayMarques[i] = objecte.getMarca();
+                i++;
+            }
+        }
+
+        for (String marques : arrayMarques){
+            if(marques != null) {
+                System.out.println(marques);
+            }
+        }
 
     }
 

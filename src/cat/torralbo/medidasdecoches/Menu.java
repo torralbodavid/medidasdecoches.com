@@ -80,7 +80,8 @@ public class Menu {
                 cotxes.consultarPerMaleter(false);
                 comprovantFinalitzar();
                 break;
-            case 5: System.out.println("cas 5");
+            case 5:
+                cotxes.retornaMarques();
                 comprovantFinalitzar();
                 break;
             default:
