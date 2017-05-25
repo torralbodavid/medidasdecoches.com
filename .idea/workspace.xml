@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa7ae1cc-b430-4cfa-ab88-8f8c90179db3" name="Default" comment="" />
+    <list default="true" id="fa7ae1cc-b430-4cfa-ab88-8f8c90179db3" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/medidasdecoches.com/cat/torralbo/medidasdecoches/Cotxes$OrdenaPerMaleter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/medidasdecoches.com/cat/torralbo/medidasdecoches/Cotxes$OrdenaPerMida.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/medidasdecoches.com/cat/torralbo/medidasdecoches/Cotxes.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/medidasdecoches.com/cat/torralbo/medidasdecoches/Menu.class" afterPath="$PROJECT_DIR$/out/production/medidasdecoches.com/cat/torralbo/medidasdecoches/Menu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cat/torralbo/medidasdecoches/Cotxes.java" afterPath="$PROJECT_DIR$/src/cat/torralbo/medidasdecoches/Cotxes.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +23,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cat/torralbo/medidasdecoches/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -28,8 +35,8 @@
       <file leaf-file-name="Cotxes.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cat/torralbo/medidasdecoches/Cotxes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="122" column="50" lean-forward="true" selection-start-line="122" selection-start-column="50" selection-end-line="122" selection-end-column="50" />
+            <state relative-caret-position="92">
+              <caret line="351" column="46" lean-forward="false" selection-start-line="351" selection-start-column="46" selection-end-line="351" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#334#342#0" expanded="true" />
@@ -41,8 +48,8 @@
       <file leaf-file-name="Menu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cat/torralbo/medidasdecoches/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1185">
-              <caret line="79" column="43" lean-forward="false" selection-start-line="79" selection-start-column="43" selection-end-line="79" selection-end-column="43" />
+            <state relative-caret-position="137">
+              <caret line="83" column="40" lean-forward="false" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -51,7 +58,7 @@
       <file leaf-file-name="cotxes.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cotxes.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
+            <state relative-caret-position="1059">
               <caret line="121" column="3" lean-forward="true" selection-start-line="121" selection-start-column="3" selection-end-line="121" selection-end-column="3" />
               <folding />
             </state>
@@ -78,6 +85,7 @@
       <find>new</find>
       <find>int</find>
       <find>read</find>
+      <find>c</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -603,12 +611,20 @@
       <workItem from="1495561388030" duration="535000" />
       <workItem from="1495631046673" duration="8690000" />
       <workItem from="1495664899071" duration="9104000" />
-      <workItem from="1495715910597" duration="5158000" />
+      <workItem from="1495715910597" duration="9541000" />
     </task>
+    <task id="LOCAL-00001" summary="Minor bug fixes">
+      <created>1495723874845</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1495723874845</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23487000" />
+    <option name="totallyTimeSpent" value="27870000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="702" extended-state="6" />
@@ -650,6 +666,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Minor bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor bug fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -733,8 +753,8 @@
     <entry file="file://$PROJECT_DIR$/src/cat/torralbo/medidasdecoches/MyComparator.java" />
     <entry file="file://$PROJECT_DIR$/src/cat/torralbo/medidasdecoches/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="120">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -743,7 +763,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cotxes.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
+        <state relative-caret-position="1059">
           <caret line="121" column="3" lean-forward="true" selection-start-line="121" selection-start-column="3" selection-end-line="121" selection-end-column="3" />
           <folding />
         </state>
@@ -751,16 +771,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cat/torralbo/medidasdecoches/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="79" column="43" lean-forward="false" selection-start-line="79" selection-start-column="43" selection-end-line="79" selection-end-column="43" />
+        <state relative-caret-position="137">
+          <caret line="83" column="40" lean-forward="false" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cat/torralbo/medidasdecoches/Cotxes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="122" column="50" lean-forward="true" selection-start-line="122" selection-start-column="50" selection-end-line="122" selection-end-column="50" />
+        <state relative-caret-position="92">
+          <caret line="351" column="46" lean-forward="false" selection-start-line="351" selection-start-column="46" selection-end-line="351" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#334#342#0" expanded="true" />

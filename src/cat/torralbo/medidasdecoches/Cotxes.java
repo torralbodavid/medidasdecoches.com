@@ -315,23 +315,49 @@ public class Cotxes {
 
     public void retornaMarques(){
         String[] arrayMarques = new String[use.size()+1];
+        int[] cotxesdeMarques = new int[use.size()+1];
+
         List llistaMarques = Arrays.asList(arrayMarques);
 
         int i = 0;
 
+        // Recorre tots els cotxes
         for (Cotxes objecte : use) {
+            //si la llista de marques no conté la marca actual, afegim la marca a l'array.
             if(!llistaMarques.contains(objecte.getMarca())) {
                 arrayMarques[i] = objecte.getMarca();
                 i++;
             }
         }
 
+        int j = 0;
+        int k = 0;
+
+        // Recorre les marques de l'array que no siguin nules.
         for (String marques : arrayMarques){
             if(marques != null) {
-                System.out.println(marques);
+                //incrementa el nombre de cotxes que hi hagi en una marca.
+                for (Cotxes objecte : use) {
+                    if(objecte.getMarca().equals(marques)){
+                        j+=1;
+                    }
+                }
+                cotxesdeMarques[k] = j;
+                j = 0;
+                k++;
+
             }
         }
 
+        //Mostra les marques i els seus cotxes
+        int l = 0;
+        for (String marques : arrayMarques){
+            if(marques != null) {
+                System.out.println(marques + ": "+cotxesdeMarques[l]+"");
+                l++;
+            }
+        }
+        System.out.println();
     }
 
 
