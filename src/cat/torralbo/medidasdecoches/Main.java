@@ -1,17 +1,16 @@
 package cat.torralbo.medidasdecoches;
 
-import org.apache.commons.io.FileUtils;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.List;
-
 public class Main {
 
     public static void main(String[] args) {
 
         Menu menu = new Menu();
-        menu.subMenus(menu.principal());
+        if(menu.inicialitza()) {
+            menu.subMenus(menu.principal());
+        } else {
+            System.out.println("Hi ha hagut un error i el programa no pot continuar.");
+            System.exit(0);
+        }
 
     }
 }

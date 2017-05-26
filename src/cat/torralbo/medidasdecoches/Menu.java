@@ -9,8 +9,20 @@ public class Menu {
     public Scanner sc = new Scanner(System.in);
     public Cotxes cotxes = new Cotxes();
 
+    public boolean inicialitza(){
+        boolean inicialitzar = false;
+        try {
+            cotxes.crear();
+            inicialitzar = true;
+        } catch(Exception e) {
+            inicialitzar = false;
+        }
+
+        return inicialitzar;
+
+    }
+
     public int principal(){
-        cotxes.crear();
         int seleccio = 0;
 
         System.out.println("BENVINGUT A MEDIDASDECOCHES.COM!\n");

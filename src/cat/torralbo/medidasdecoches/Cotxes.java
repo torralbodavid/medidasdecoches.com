@@ -98,97 +98,86 @@ public class Cotxes {
 
     public void crear() {
 
-        try {
+        try{
 
-            List<String> lines = FileUtils.readLines(f, "UTF-8");
+            Scanner lector = new Scanner(f, "UTF-8");
 
-            int i = 0;
+            while(lector.hasNextLine()) {
 
-            Cotxes creaCotxes = new Cotxes();
+                Cotxes creaCotxes = new Cotxes();
 
-
-            for (String line : lines) {
-                if(!line.equals("END.")) {
-                    i++;
-                    //ingressem valors a l'objecte
-                    ingressarValors(i, creaCotxes, line);
-
-                    //comprovem que l'iterador sigui igual a 8
-                    if(i == 8){
-                        //afegim l'objecte
-                        use.add(creaCotxes);
-                        //reiniciem la posició a 0
-                        i = 0;
-                        //creem un nou objecte per el següent cotxe.
-                        creaCotxes = new Cotxes();
+                String line = lector.nextLine();
+                if (!line.contains("END.")) {
+                    try {
+                        creaCotxes.setMarca(line);
+                    } catch (Exception e) {
+                        creaCotxes.setMarca(null);
                     }
-                } else {
-                    break;
+
+                    line = lector.nextLine();
+
+                    try {
+                        creaCotxes.setModel(line);
+                    } catch (Exception e) {
+                        creaCotxes.setModel(null);
+                    }
+
+                    line = lector.nextLine();
+                    try {
+                        creaCotxes.setVersio(line);
+                    } catch (Exception e) {
+                        creaCotxes.setVersio(null);
+                    }
+
+                    line = lector.nextLine();
+
+                    try {
+                        creaCotxes.setAny(Integer.parseInt(line));
+                    } catch (Exception e) {
+                        creaCotxes.setAny(0);
+                    }
+
+                    line = lector.nextLine();
+
+                    try {
+                        creaCotxes.setLlarg(Double.parseDouble(line));
+                    } catch (Exception e) {
+                        creaCotxes.setLlarg(0);
+                    }
+
+                    line = lector.nextLine();
+
+                    try {
+                        creaCotxes.setAmple(Double.parseDouble(line));
+                    } catch (Exception e) {
+                        creaCotxes.setAmple(0);
+                    }
+
+                    line = lector.nextLine();
+
+                    try {
+                        creaCotxes.setAlt(Double.parseDouble(line));
+                    } catch (Exception e) {
+                        creaCotxes.setAlt(0);
+                    }
+
+                    line = lector.nextLine();
+
+                    try {
+                        creaCotxes.setMaleter(Double.parseDouble(line));
+                    } catch (Exception e) {
+                        creaCotxes.setMaleter(0);
+                    }
+
+                    use.add(creaCotxes);
                 }
             }
+
+            lector.close();
 
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
-    }
-
-    /*
-    Aquest mètode ingressarà els valors de l'objecte en els setters adients a partir de la línia del fitxer adient.
-     */
-    public void ingressarValors(int i, Cotxes creaCotxes, String line){
-        switch(i){
-            case 1:
-                try {
-                    creaCotxes.setMarca(line);
-                } catch (Exception e) {
-                    creaCotxes.setMarca(null);
-                };
-            case 2:
-                try {
-                    creaCotxes.setModel(line);
-                } catch (Exception e) {
-                    creaCotxes.setModel(null);
-                };
-            case 3:
-                try {
-                    creaCotxes.setVersio(line);
-                } catch (Exception e) {
-                    creaCotxes.setVersio(null);
-                };
-            case 4:
-                try {
-                    creaCotxes.setAny(Integer.parseInt(line));
-                } catch (Exception e) {
-                    creaCotxes.setAny(0);
-                };
-            case 5:
-                try {
-                    creaCotxes.setLlarg(Double.parseDouble(line));
-                } catch (Exception e) {
-                    creaCotxes.setLlarg(0);
-                };
-            case 6:
-                try {
-                    creaCotxes.setAmple(Double.parseDouble(line));
-                } catch (Exception e) {
-                    creaCotxes.setAmple(0);
-                };
-            case 7:
-                try {
-                    creaCotxes.setAlt(Double.parseDouble(line));
-                } catch (Exception e) {
-                    creaCotxes.setAlt(0);
-                };
-            case 8:
-                try {
-                    creaCotxes.setMaleter(Double.parseDouble(line));
-                } catch (Exception e) {
-                    creaCotxes.setMaleter(0);
-                };
-        }
-
 
     }
 
@@ -314,49 +303,41 @@ public class Cotxes {
     }
 
     public void retornaMarques(){
-        String[] arrayMarques = new String[use.size()+1];
-        int[] cotxesdeMarques = new int[use.size()+1];
+        //fem array per a guardar marques i totals
+        ArrayList<String> marquesDeCotxes = new ArrayList<String>();
+        List<Integer> totalModels = new ArrayList<Integer>();
 
-        List llistaMarques = Arrays.asList(arrayMarques);
 
-        int i = 0;
 
-        // Recorre tots els cotxes
-        for (Cotxes objecte : use) {
-            //si la llista de marques no conté la marca actual, afegim la marca a l'array.
-            if(!llistaMarques.contains(objecte.getMarca())) {
-                arrayMarques[i] = objecte.getMarca();
-                i++;
+        //entrem les marques de cotxes
+        for (int i = 0; i < use.size(); i++) {
+            //si l'array marques de cotxes no conté la marca que segueix a l'arraylist principal l'afegim.
+            if (!marquesDeCotxes.contains(use.get(i).getMarca())) {
+                //afegim a l'array, la marca de cotxes a la posició i
+                marquesDeCotxes.add(use.get(i).getMarca());
             }
         }
 
-        int j = 0;
-        int k = 0;
+        //entrem el total de models de les marques entrades anteriorment
+        for (int i = 0; i < marquesDeCotxes.size(); i++) {
+            //declarem una variable per al nombre de models
+            int nModels = 0;
+            totalModels.add(0);
 
-        // Recorre les marques de l'array que no siguin nules.
-        for (String marques : arrayMarques){
-            if(marques != null) {
-                //incrementa el nombre de cotxes que hi hagi en una marca.
-                for (Cotxes objecte : use) {
-                    if(objecte.getMarca().equals(marques)){
-                        j+=1;
-                    }
+            for (int j = 0; j < use.size(); j++) {
+                if (use.get(j).getMarca().equals(marquesDeCotxes.get(i))) {
+                    nModels += 1;
+                    totalModels.add(i, nModels);
+
                 }
-                cotxesdeMarques[k] = j;
-                j = 0;
-                k++;
-
             }
         }
 
-        //Mostra les marques i els seus cotxes
-        int l = 0;
-        for (String marques : arrayMarques){
-            if(marques != null) {
-                System.out.println(marques + ": "+cotxesdeMarques[l]+"");
-                l++;
-            }
+        //mostrem les marques i els models
+        for (int i = 0; i < marquesDeCotxes.size(); i++) {
+            System.out.println(marquesDeCotxes.get(i) + " " + totalModels.get(i));
         }
+
         System.out.println();
     }
 
