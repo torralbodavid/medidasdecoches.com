@@ -21,17 +21,6 @@ public class Cotxes {
     private double llarg, ample, alt, maleter;
     private boolean seleccio;
 
-    public Cotxes() {
-        this.marca = marca;
-        this.model = model;
-        this.versio = versio;
-        this.any = any;
-        this.llarg = llarg;
-        this.ample = ample;
-        this.alt = alt;
-        this.maleter = maleter;
-    }
-
     public String getMarca() {
         return marca;
     }
@@ -99,11 +88,12 @@ public class Cotxes {
     public void crear() {
 
         try{
-
+            //llegim les línies amb Scanner
             Scanner lector = new Scanner(f, "UTF-8");
 
+            //mentre el lector tingui línies...
             while(lector.hasNextLine()) {
-
+                //creem un objecte nou per cada línia.
                 Cotxes creaCotxes = new Cotxes();
 
                 String line = lector.nextLine();
